@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silly Web</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background:  #000000;
+            color: white;
+            padding: 40px 20px;
+        }
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        button {
+            background-color: #04AA6D;
+            color: white;
+            border-radius: 12px;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #058457;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #058457;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>hallo uhhh welcome to my Web</h1>
+        <p>why are you here</p>
+    </header>
+
+    <main>
+        <h2>Click the button for a surprise :3</h2>
+        <button onclick="showMessage()">Click me</button>
+        <p id="message"></p>
+    </main>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "gay";
+        }
+    </script>
+
+</body>
+</html>
